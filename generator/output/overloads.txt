@@ -5,39 +5,32 @@ ImColor_ImColor	5
 3	nil	ImColor_ImColor_U32 (ImU32)
 4	nil	ImColor_ImColor_Float (float,float,float,float)
 5	nil	ImColor_ImColor_Vec4 (const ImVec4)
-ImDrawList_AddText	6
+ImDrawList_AddText	4
 1	void	ImDrawList_AddText_Vec2U32Strv (const ImVec2,ImU32,ImStrv)
-2	void	ImDrawList_AddText_Vec2U32StrStr (const ImVec2,ImU32,const char*,const char*)
-3	void	ImDrawList_AddText_FontPtrFloatVec2U32Strv (const ImFont*,float,const ImVec2,ImU32,ImStrv,float,const ImVec4*)
-4	void	ImDrawList_AddText_FontPtrFloatVec2U32StrStr (const ImFont*,float,const ImVec2,ImU32,const char*,const char*,float,const ImVec4*)
-5	void	ImDrawList_AddText_Vec2U32Str (const ImVec2,ImU32,const char*)
-6	void	ImDrawList_AddText_FontPtrFloatVec2U32StrFloat (const ImFont*,float,const ImVec2,ImU32,const char*,float,const ImVec4*)
+2	void	ImDrawList_AddText_FontPtrFloatVec2Strv (const ImFont*,float,const ImVec2,ImU32,ImStrv,float,const ImVec4*)
+3	void	ImDrawList_AddText_Vec2U32Str (const ImVec2,ImU32,const char*)
+4	void	ImDrawList_AddText_FontPtrFloatVec2Str (const ImFont*,float,const ImVec2,ImU32,const char*,float,const ImVec4*)
 ImFontAtlas_AddFontFromFileTTF	2
 1	ImFont*	ImFontAtlas_AddFontFromFileTTF_Strv (ImStrv,float,const ImFontConfig*,const ImWchar*)
 2	ImFont*	ImFontAtlas_AddFontFromFileTTF_Str (const char*,float,const ImFontConfig*,const ImWchar*)
 ImFontAtlas_AddFontFromMemoryCompressedBase85TTF	2
 1	ImFont*	ImFontAtlas_AddFontFromMemoryCompressedBase85TTF_Strv (ImStrv,float,const ImFontConfig*,const ImWchar*)
 2	ImFont*	ImFontAtlas_AddFontFromMemoryCompressedBase85TTF_Str (const char*,float,const ImFontConfig*,const ImWchar*)
-ImFontGlyphRangesBuilder_AddText	3
+ImFontGlyphRangesBuilder_AddText	2
 1	void	ImFontGlyphRangesBuilder_AddText_Strv (ImStrv)
-2	void	ImFontGlyphRangesBuilder_AddText_StrStr (const char*,const char*)
-3	void	ImFontGlyphRangesBuilder_AddText_Str (const char*)
-ImFont_CalcTextSizeA	3
+2	void	ImFontGlyphRangesBuilder_AddText_Str (const char*)
+ImFont_CalcTextSizeA	2
 1	ImVec2	ImFont_CalcTextSizeA_Strv (float,float,float,ImStrv,const char**)const
-2	ImVec2	ImFont_CalcTextSizeA_StrStr (float,float,float,const char*,const char*,const char**)const
-3	ImVec2	ImFont_CalcTextSizeA_StrStrPtr (float,float,float,const char*,const char**)const
-ImFont_CalcWordWrapPositionA	3
+2	ImVec2	ImFont_CalcTextSizeA_Str (float,float,float,const char*,const char**)const
+ImFont_CalcWordWrapPositionA	2
 1	const char*	ImFont_CalcWordWrapPositionA_Strv (float,ImStrv,float)const
-2	const char*	ImFont_CalcWordWrapPositionA_StrStr (float,const char*,const char*,float)const
-3	const char*	ImFont_CalcWordWrapPositionA_StrFloat (float,const char*,float)const
-ImFont_RenderText	3
+2	const char*	ImFont_CalcWordWrapPositionA_Str (float,const char*,float)const
+ImFont_RenderText	2
 1	void	ImFont_RenderText_Strv (ImDrawList*,float,ImVec2,ImU32,const ImVec4,ImStrv,float,bool)const
-2	void	ImFont_RenderText_StrStr (ImDrawList*,float,ImVec2,ImU32,const ImVec4,const char*,const char*,float,bool)const
-3	void	ImFont_RenderText_StrFloat (ImDrawList*,float,ImVec2,ImU32,const ImVec4,const char*,float,bool)const
-ImGuiInputTextCallbackData_InsertChars	3
+2	void	ImFont_RenderText_Str (ImDrawList*,float,ImVec2,ImU32,const ImVec4,const char*,float,bool)const
+ImGuiInputTextCallbackData_InsertChars	2
 1	void	ImGuiInputTextCallbackData_InsertChars_Strv (int,ImStrv)
-2	void	ImGuiInputTextCallbackData_InsertChars_StrStr (int,const char*,const char*)
-3	void	ImGuiInputTextCallbackData_InsertChars_Str (int,const char*)
+2	void	ImGuiInputTextCallbackData_InsertChars_Str (int,const char*)
 ImGuiPayload_IsDataType	2
 1	bool	ImGuiPayload_IsDataType_Strv (ImStrv)const
 2	bool	ImGuiPayload_IsDataType_Str (const char*)const
@@ -52,20 +45,18 @@ ImGuiStyleMod_ImGuiStyleMod	3
 1	nil	ImGuiStyleMod_ImGuiStyleMod_Int (ImGuiStyleVar,int)
 2	nil	ImGuiStyleMod_ImGuiStyleMod_Float (ImGuiStyleVar,float)
 3	nil	ImGuiStyleMod_ImGuiStyleMod_Vec2 (ImGuiStyleVar,ImVec2)
-ImGuiTextBuffer_append	3
+ImGuiTextBuffer_append	2
 1	void	ImGuiTextBuffer_append_Strv (ImStrv)
-2	void	ImGuiTextBuffer_append_StrStr (const char*,const char*)
-3	void	ImGuiTextBuffer_append_Str (const char*)
+2	void	ImGuiTextBuffer_append_Str (const char*)
 ImGuiTextFilter_Draw	2
 1	bool	ImGuiTextFilter_Draw_Strv (ImStrv,float)
 2	bool	ImGuiTextFilter_Draw_Str (const char*,float)
 ImGuiTextFilter_ImGuiTextFilter	2
 1	nil	ImGuiTextFilter_ImGuiTextFilter_Strv (ImStrv)
 2	nil	ImGuiTextFilter_ImGuiTextFilter_Str (const char*)
-ImGuiTextFilter_PassFilter	3
+ImGuiTextFilter_PassFilter	2
 1	bool	ImGuiTextFilter_PassFilter_Strv (ImStrv)const
-2	bool	ImGuiTextFilter_PassFilter_StrStr (const char*,const char*)const
-3	bool	ImGuiTextFilter_PassFilter_Str_const (const char*)const
+2	bool	ImGuiTextFilter_PassFilter_Str (const char*)const
 ImGuiWindow_GetID	5
 1	ImGuiID	ImGuiWindow_GetID_Strv (ImStrv)
 2	ImGuiID	ImGuiWindow_GetID_Str (const char*)
@@ -216,10 +207,9 @@ igButton	2
 igButtonEx	2
 1	bool	igButtonEx_Strv (ImStrv,const ImVec2,ImGuiButtonFlags)
 2	bool	igButtonEx_Str (const char*,const ImVec2,ImGuiButtonFlags)
-igCalcTextSize	3
+igCalcTextSize	2
 1	ImVec2	igCalcTextSize_Strv (ImStrv,bool,float)
-2	ImVec2	igCalcTextSize_StrStr (const char*,const char*,bool,float)
-3	ImVec2	igCalcTextSize_StrBool (const char*,bool,float)
+2	ImVec2	igCalcTextSize_Str (const char*,bool,float)
 igCheckbox	2
 1	bool	igCheckbox_Strv (ImStrv,bool*)
 2	bool	igCheckbox_Str (const char*,bool*)
@@ -334,11 +324,10 @@ igGetForegroundDrawList	3
 1	ImDrawList*	igGetForegroundDrawList_Nil ()
 2	ImDrawList*	igGetForegroundDrawList_WindowPtr (ImGuiWindow*)
 3	ImDrawList*	igGetForegroundDrawList_ViewportPtr (ImGuiViewport*)
-igGetID	4
+igGetID	3
 1	ImGuiID	igGetID_Strv (ImStrv)
-2	ImGuiID	igGetID_StrStr (const char*,const char*)
-3	ImGuiID	igGetID_Ptr (const void*)
-4	ImGuiID	igGetID_Str (const char*)
+2	ImGuiID	igGetID_Ptr (const void*)
+3	ImGuiID	igGetID_Str (const char*)
 igImAbs	2
 1	float	igImAbs_Float (float)
 2	double	igImAbs_double (double)
@@ -501,12 +490,11 @@ igPlotLines	4
 igProgressBar	2
 1	void	igProgressBar_Strv (float,const ImVec2,ImStrv)
 2	void	igProgressBar_Str (float,const ImVec2,const char*)
-igPushID	5
+igPushID	4
 1	void	igPushID_Strv (ImStrv)
-2	void	igPushID_StrStr (const char*,const char*)
-3	void	igPushID_Ptr (const void*)
-4	void	igPushID_Int (int)
-5	void	igPushID_Str (const char*)
+2	void	igPushID_Ptr (const void*)
+3	void	igPushID_Int (int)
+4	void	igPushID_Str (const char*)
 igPushStyleColor	2
 1	void	igPushStyleColor_U32 (ImGuiCol,ImU32)
 2	void	igPushStyleColor_Vec4 (ImGuiCol,const ImVec4)
@@ -658,10 +646,9 @@ igTextEx	3
 1	void	igTextEx_Strv (ImStrv,ImGuiTextFlags)
 2	void	igTextEx_StrStr (const char*,const char*,ImGuiTextFlags)
 3	void	igTextEx_StrTextFlags (const char*,ImGuiTextFlags)
-igTextUnformatted	3
+igTextUnformatted	2
 1	void	igTextUnformatted_Strv (ImStrv)
-2	void	igTextUnformatted_StrStr (const char*,const char*)
-3	void	igTextUnformatted_Str (const char*)
+2	void	igTextUnformatted_Str (const char*)
 igTreeNode	5
 1	bool	igTreeNode_Strv (ImStrv)
 2	bool	igTreeNode_StrvStr (ImStrv,const char*,...)
@@ -707,4 +694,4 @@ igValue	8
 6	void	igValue_StrInt (const char*,int)
 7	void	igValue_StrUint (const char*,unsigned int)
 8	void	igValue_StrFloat (const char*,float,const char*)
-503 overloaded
+490 overloaded
