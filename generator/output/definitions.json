@@ -13077,7 +13077,7 @@
       "cimguiname": "igBeginPopupContextItem",
       "defaults": {
         "popup_flags": "1",
-        "str_id": "ImStrv()"
+        "str_id": "NULL"
       },
       "funcname": "BeginPopupContextItem",
       "isIMSTR_S": 1,
@@ -13134,7 +13134,7 @@
       "cimguiname": "igBeginPopupContextVoid",
       "defaults": {
         "popup_flags": "1",
-        "str_id": "ImStrv()"
+        "str_id": "NULL"
       },
       "funcname": "BeginPopupContextVoid",
       "isIMSTR_S": 1,
@@ -13191,7 +13191,7 @@
       "cimguiname": "igBeginPopupContextWindow",
       "defaults": {
         "popup_flags": "1",
-        "str_id": "ImStrv()"
+        "str_id": "NULL"
       },
       "funcname": "BeginPopupContextWindow",
       "isIMSTR_S": 1,
@@ -15526,7 +15526,7 @@
       "defaults": {
         "border": "true",
         "count": "1",
-        "id": "ImStrv()"
+        "id": "NULL"
       },
       "funcname": "Columns",
       "isIMSTR_S": 1,
@@ -17076,7 +17076,7 @@
       "defaults": {
         "flags": "0",
         "format": "\"%.3f\"",
-        "format_max": "ImStrv()",
+        "format_max": "NULL",
         "v_max": "0.0f",
         "v_min": "0.0f",
         "v_speed": "1.0f"
@@ -17609,7 +17609,7 @@
       "defaults": {
         "flags": "0",
         "format": "\"%d\"",
-        "format_max": "ImStrv()",
+        "format_max": "NULL",
         "v_max": "0",
         "v_min": "0",
         "v_speed": "1.0f"
@@ -17720,7 +17720,7 @@
       "cimguiname": "igDragScalar",
       "defaults": {
         "flags": "0",
-        "format": "ImStrv()",
+        "format": "NULL",
         "p_max": "NULL",
         "p_min": "NULL",
         "v_speed": "1.0f"
@@ -17839,7 +17839,7 @@
       "cimguiname": "igDragScalarN",
       "defaults": {
         "flags": "0",
-        "format": "ImStrv()",
+        "format": "NULL",
         "p_max": "NULL",
         "p_min": "NULL",
         "v_speed": "1.0f"
@@ -24303,7 +24303,7 @@
       "cimguiname": "igInputScalar",
       "defaults": {
         "flags": "0",
-        "format": "ImStrv()",
+        "format": "NULL",
         "p_step": "NULL",
         "p_step_fast": "NULL"
       },
@@ -24412,7 +24412,7 @@
       "cimguiname": "igInputScalarN",
       "defaults": {
         "flags": "0",
-        "format": "ImStrv()",
+        "format": "NULL",
         "p_step": "NULL",
         "p_step_fast": "NULL"
       },
@@ -26720,7 +26720,7 @@
       "cimguiname": "igLogToFile",
       "defaults": {
         "auto_open_depth": "-1",
-        "filename": "ImStrv()"
+        "filename": "NULL"
       },
       "funcname": "LogToFile",
       "isIMSTR_S": 1,
@@ -26956,7 +26956,7 @@
       "defaults": {
         "enabled": "true",
         "selected": "false",
-        "shortcut": "ImStrv()"
+        "shortcut": "NULL"
       },
       "funcname": "MenuItem",
       "isIMSTR_S": 1,
@@ -27302,7 +27302,7 @@
       "cimguiname": "igOpenPopupOnItemClick",
       "defaults": {
         "popup_flags": "1",
-        "str_id": "ImStrv()"
+        "str_id": "NULL"
       },
       "funcname": "OpenPopupOnItemClick",
       "isIMSTR_S": 1,
@@ -27596,7 +27596,7 @@
       "cimguiname": "igPlotHistogram",
       "defaults": {
         "graph_size": "ImVec2(0,0)",
-        "overlay_text": "ImStrv()",
+        "overlay_text": "NULL",
         "scale_max": "FLT_MAX",
         "scale_min": "FLT_MAX",
         "stride": "sizeof(float)",
@@ -27656,7 +27656,7 @@
       "cimguiname": "igPlotHistogram",
       "defaults": {
         "graph_size": "ImVec2(0,0)",
-        "overlay_text": "ImStrv()",
+        "overlay_text": "NULL",
         "scale_max": "FLT_MAX",
         "scale_min": "FLT_MAX",
         "values_offset": "0"
@@ -27836,7 +27836,7 @@
       "cimguiname": "igPlotLines",
       "defaults": {
         "graph_size": "ImVec2(0,0)",
-        "overlay_text": "ImStrv()",
+        "overlay_text": "NULL",
         "scale_max": "FLT_MAX",
         "scale_min": "FLT_MAX",
         "stride": "sizeof(float)",
@@ -27896,7 +27896,7 @@
       "cimguiname": "igPlotLines",
       "defaults": {
         "graph_size": "ImVec2(0,0)",
-        "overlay_text": "ImStrv()",
+        "overlay_text": "NULL",
         "scale_max": "FLT_MAX",
         "scale_min": "FLT_MAX",
         "values_offset": "0"
@@ -28181,7 +28181,7 @@
       "call_args": "(fraction,size_arg,overlay)",
       "cimguiname": "igProgressBar",
       "defaults": {
-        "overlay": "ImStrv()",
+        "overlay": "NULL",
         "size_arg": "ImVec2(-FLT_MIN,0)"
       },
       "funcname": "ProgressBar",
@@ -33202,7 +33202,7 @@
       "cimguiname": "igSliderScalar",
       "defaults": {
         "flags": "0",
-        "format": "ImStrv()"
+        "format": "NULL"
       },
       "funcname": "SliderScalar",
       "isIMSTR_S": 1,
@@ -33307,7 +33307,7 @@
       "cimguiname": "igSliderScalarN",
       "defaults": {
         "flags": "0",
-        "format": "ImStrv()"
+        "format": "NULL"
       },
       "funcname": "SliderScalarN",
       "isIMSTR_S": 1,
@@ -37000,7 +37000,7 @@
       "cimguiname": "igVSliderScalar",
       "defaults": {
         "flags": "0",
-        "format": "ImStrv()"
+        "format": "NULL"
       },
       "funcname": "VSliderScalar",
       "isIMSTR_S": 1,
@@ -37210,7 +37210,7 @@
       "call_args": "(prefix,v,float_format)",
       "cimguiname": "igValue",
       "defaults": {
-        "float_format": "ImStrv()"
+        "float_format": "NULL"
       },
       "funcname": "Value",
       "isIMSTR_S": 1,
