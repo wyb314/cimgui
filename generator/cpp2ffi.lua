@@ -829,6 +829,10 @@ local function ADDIMSTR_S(FP)
 						caar = caar .. name .. ","
 					else
 						local callname = v.reftoptr and "*"..name or name 
+						--wrap argument into ImStrv to avoid ambiguities
+						if v.type == "ImStrv" then
+							callname = "ImStrv("..callname..")"
+						end
 						caar = caar .. callname .. ","
 					end
 				end
