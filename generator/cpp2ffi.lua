@@ -845,7 +845,8 @@ local function ADDIMSTR_S(FP)
             defT2.signature = defT.signature:gsub("ImStrv","const char*") --.."_S"
             --defT2.ov_cimguiname = defT2.ov_cimguiname --.. "_Strv"
 			--defT.ov_cimguiname = defT.ov_cimguiname .. "_Strv"
-            defT2.isIMSTR_S = 1
+            defT2.isIMSTR_S = 2
+			defT.isIMSTR_S = 1
 			-- check there is not an equal version in imgui_stname
 			local doadd = true
 			for i,dd in ipairs(cimf) do
