@@ -16,6 +16,8 @@ file(GLOB IMGUI_SOURCES
     imgui/imgui_draw.cpp
     imgui/imgui_demo.cpp
     imgui/imgui_widgets.cpp
+    ImGuiColorTextEdit/TextEditor.cpp
+    ImGuiColorTextEdit/TextEditorDemo.cpp
 	${TABLES_SOURCE}
 )
 
@@ -34,7 +36,7 @@ endif(IMGUI_FREETYPE)
 if (IMGUI_STATIC)
     add_library(cimgui STATIC ${IMGUI_SOURCES})
 else (IMGUI_STATIC)
-    add_library(cimgui SHARED ${IMGUI_SOURCES})
+    add_library(cimgui SHARED ${IMGUI_SOURCES} "c_textedit.cpp")
 endif (IMGUI_STATIC)
 
 target_compile_definitions(cimgui PUBLIC IMGUI_DISABLE_OBSOLETE_FUNCTIONS=1)
@@ -47,6 +49,7 @@ endif (WIN32)
 
 target_include_directories(cimgui PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
 target_include_directories(cimgui PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/imgui)
+target_include_directories(cimgui PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/ImGuiColorTextEdit)
 set_target_properties(cimgui PROPERTIES PREFIX "")
 target_link_libraries(cimgui ${IMGUI_LIBRARIES})
 
